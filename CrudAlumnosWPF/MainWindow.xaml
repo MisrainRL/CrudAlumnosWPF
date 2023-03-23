@@ -11,6 +11,8 @@
             <RowDefinition Height="33*"/>
             <RowDefinition Height="184*"/>
         </Grid.RowDefinitions>
+        
+        
         <Label Content="Nombre" HorizontalAlignment="Left" Margin="34,36,0,0" VerticalAlignment="Top"/>
         <Label Content="Correo" HorizontalAlignment="Left" Margin="38,1,0,0" VerticalAlignment="Top" Grid.Row="1"/>
         <Label Content="Edad" HorizontalAlignment="Left" Margin="43,32,0,0" VerticalAlignment="Top" Grid.Row="1"/>
