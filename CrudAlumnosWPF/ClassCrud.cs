@@ -9,18 +9,13 @@ namespace CrudAlumnosWPF
     internal class ClassCrud
     {
         public List<Alumnos> LAlumnos = new List<Alumnos>();
-
         public ClassCrud() { }
-
         public List<Alumnos> ListarAlumnos() { 
             return LAlumnos; 
         }
-
         public void AddEstudiante(Alumnos estudiante) { 
             LAlumnos.Add(estudiante);
         }
-
-
         public void Actualizar(int index, string nombre, int edad, string correo)
         {
             // Buscar el objeto correspondiente en la lista y actualizar sus propiedades
