@@ -1,0 +1,26 @@
+﻿<Window x:Class="CrudAlumnosWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CrudAlumnosWPF"
+        mc:Ignorable="d"
+        Title="CRUD-Alumnos" Height="487" Width="513">
+    <Grid Margin="0,0,53,59">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="184*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="34,36,0,0" VerticalAlignment="Top"/>
+        <Label Content="Correo" HorizontalAlignment="Left" Margin="38,1,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <Label Content="Edad" HorizontalAlignment="Left" Margin="43,32,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <TextBox x:Name="TxtCorreo" HorizontalAlignment="Left" Margin="113,5,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="146" Grid.Row="1"/>
+        <TextBox x:Name="TxtEdad" HorizontalAlignment="Left" Margin="113,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="146" Grid.Row="1"/>
+        <TextBox x:Name="TxtNombre" HorizontalAlignment="Left" Margin="113,40,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="146"/>
+        <DataGrid x:Name="dgvDatos" d:ItemsSource="{d:SampleData ItemCount=3}" Margin="43,80,36,58" Grid.Row="1" SelectionChanged="dgvDatos_SelectionChanged"/>
+        <Button x:Name="BtnAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="328,38,0,0" VerticalAlignment="Top" Width="96" Click="BtnAgregar_Click"/>
+        <Button x:Name="BtnBorrar" Content="Eliminar" HorizontalAlignment="Left" Margin="328,39,0,0" VerticalAlignment="Top" Width="96" Grid.Row="1" Click="BtnBorrar_Click"/>
+        <Button x:Name="BtnModificar" Content="Nodificar" HorizontalAlignment="Left" Margin="328,8,0,0" VerticalAlignment="Top" Width="96" Grid.Row="1" Click="BtnModificar_Click"/>
+       
+    </Grid>
+</Window>
